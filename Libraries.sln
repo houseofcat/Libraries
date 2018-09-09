@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2019
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HouseofCat.Library", "Libraries\HouseofCat.Library.csproj", "{2222D11F-5897-46E2-B60C-CD83C40C2F75}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HouseofCat.Library", "HouseofCat.Library\HouseofCat.Library.csproj", "{2222D11F-5897-46E2-B60C-CD83C40C2F75}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HouseofCat.Models", "HouseofCat.Models\HouseofCat.Models.csproj", "{78DC4D34-500F-40B3-AC13-D6D25EF9C090}"
 EndProject
