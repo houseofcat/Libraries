@@ -4,7 +4,7 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <LangVersion>latest</LangVersion>
     <Company>HouseofCat.io</Company>
-    <Version>1.0.0.0</Version>
+    <Version>1.0.1</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageLicenseUrl>https://github.com/houseofcat/Libraries/blob/master/LICENSE</PackageLicenseUrl>
@@ -16,6 +16,8 @@
     <PackageProjectUrl>https://github.com/houseofcat/Libraries</PackageProjectUrl>
     <Authors>HouseofCat.io</Authors>
     <PackageReleaseNotes>Initial Release.</PackageReleaseNotes>
+    <AssemblyVersion>1.0.1.0</AssemblyVersion>
+    <FileVersion>1.0.1.0</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>
