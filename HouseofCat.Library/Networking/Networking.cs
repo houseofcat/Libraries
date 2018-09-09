@@ -4,9 +4,9 @@ using System.Net;
 using System.Net.NetworkInformation;
 using System.Threading.Tasks;
 
-namespace HouseofCat.Library.Networking
+namespace HouseofCat.Library
 {
-    public static class NetworkInfo
+    public static class NetworkInformation
     {
         public static Task<List<TcpConnectionInformation>> GetActiveTcpConnectionsAsync()
         {

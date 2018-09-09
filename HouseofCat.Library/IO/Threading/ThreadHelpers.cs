@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Threading.Tasks;
 
-namespace HouseofCat.Library.Threading
+namespace HouseofCat.Library.IO
 {
     /// <summary>
     /// Class for help with dealing with Threads.
     /// </summary>
-    public static class ThreadHelpers
+    public static class Threading
     {
         /// <summary>
         /// Uses NativeMethods to set threads affinity to a CPU logical processor. Hardware counts start at 0.

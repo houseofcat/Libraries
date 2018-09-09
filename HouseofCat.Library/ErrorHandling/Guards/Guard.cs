@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace HouseofCat.Library.Guards
+namespace HouseofCat.Library.ErrorHandling
 {
     /// <summary>
     /// A class to store methods that aid in validation.

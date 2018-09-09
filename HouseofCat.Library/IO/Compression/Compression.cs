@@ -4,7 +4,7 @@ using System.IO.Compression;
 using System.Threading.Tasks;
 using static HouseofCat.Models.Enums;
 
-namespace HouseofCat.Library.Compression
+namespace HouseofCat.Library.IO
 {
     /// <summary>
     /// CookedRabbit Utility class to help compress objects.
