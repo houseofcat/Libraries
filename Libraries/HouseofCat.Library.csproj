@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="lz4net" Version="1.0.15.93" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HouseofCat.Models\HouseofCat.Models.csproj" />
+  </ItemGroup>
+
+</Project>
