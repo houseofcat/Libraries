@@ -7,7 +7,7 @@ using static HouseofCat.Models.Enums;
 namespace HouseofCat.Library.IO
 {
     /// <summary>
-    /// CookedRabbit Utility class to help compress objects.
+    /// IO Utility class to help compress objects.
     /// </summary>
     public static class Compression
     {

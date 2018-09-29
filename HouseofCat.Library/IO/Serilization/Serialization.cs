@@ -6,7 +6,7 @@ using static HouseofCat.Models.Enums;
 namespace HouseofCat.Library.IO
 {
     /// <summary>
-    /// CookedRabbit Utility class to help serialize objects.
+    /// IO Utility class to help serialize objects.
     /// </summary>
     public static class Serialization
     {
