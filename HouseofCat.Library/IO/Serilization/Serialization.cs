@@ -142,11 +142,7 @@ namespace HouseofCat.Library.IO
         {
             return await Task.Run(() =>
             {
-                var json = JsonSerializer.ToJsonString(message);
-
-                if (makePretty) { json = JsonSerializer.PrettyPrint(json); }
-
-                return json;
+                return makePretty ? JsonSerializer.PrettyPrint(JsonSerializer.ToJsonString(message)) : JsonSerializer.ToJsonString(message);
             });
         }
 
@@ -167,9 +163,9 @@ namespace HouseofCat.Library.IO
         /// <typeparam name="T"></typeparam>
         /// <param name="json"></param>
         /// <returns>An object of type T</returns>
-        public static async Task<T> DeserializeJsonAsync<T>(string json)
+        public static async Task<T> DeserializeJsonAsync<T>(string jsonString)
         {
-            return await Task.Run(() => JsonSerializer.Deserialize<T>(json));
+            return await Task.Run(() => JsonSerializer.Deserialize<T>(jsonString));
         }
     }
 }

@@ -4,7 +4,7 @@ using System.Net;
 using System.Net.NetworkInformation;
 using System.Threading.Tasks;
 
-namespace HouseofCat.Library
+namespace HouseofCat.Library.Monitoring
 {
     public static class NetworkInformation
     {

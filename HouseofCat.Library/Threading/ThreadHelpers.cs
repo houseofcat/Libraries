@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 
-namespace HouseofCat.Library.IO
+namespace HouseofCat.Library.Threading
 {
     /// <summary>
     /// Class for help with dealing with Threads.

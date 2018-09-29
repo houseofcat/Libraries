@@ -47,7 +47,7 @@ namespace HouseofCat.Library.IO
         /// <param name="input"></param>
         /// <param name="method"></param>
         /// <returns></returns>
-        public static async Task<byte[]> DecompressAsync(byte[] input, CompressionMethod method = CompressionMethod.Gzip)
+        public static async Task<byte[]> DecompressAsync(byte[] input, CompressionMethod method = CompressionMethod.LZ4)
         {
             byte[] output = null;
 

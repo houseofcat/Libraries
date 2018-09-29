@@ -2,7 +2,7 @@
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace HouseofCat.Library
+namespace HouseofCat.Library.Monitoring
 {
     /// <summary>
     /// Class that helps monitor Thread usage.

@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace HouseofCat.Models.Threading
 {
-    class LimitedConcurrencyTaskScheduler : TaskScheduler
+    public class LimitedConcurrencyTaskScheduler : TaskScheduler
     {
         [ThreadStatic]
         private static bool _currentThreadIsProcessingItems;
@@ -16,7 +16,7 @@ namespace HouseofCat.Models.Threading
 
         public LimitedConcurrencyTaskScheduler(int maxDegreeOfParallelism)
         {
-            if (maxDegreeOfParallelism < 1) throw new ArgumentOutOfRangeException(nameof(maxDegreeOfParallelism));
+            if (maxDegreeOfParallelism < 2) throw new ArgumentOutOfRangeException(nameof(maxDegreeOfParallelism));
 
             _maxDegreeOfParallelism = maxDegreeOfParallelism;
         }
@@ -110,12 +110,14 @@ namespace HouseofCat.Models.Threading
             try
             {
                 Monitor.TryEnter(_tasks, ref lockTaken);
-                if (lockTaken) return _tasks;
-                else throw new NotSupportedException();
+                if (lockTaken)
+                { return _tasks; }
+                else
+                { throw new NotSupportedException(); }
             }
             finally
             {
-                if (lockTaken) Monitor.Exit(_tasks);
+                if (lockTaken) { Monitor.Exit(_tasks); }
             }
         }
     }
