@@ -1,4 +1,4 @@
-# Libraries
+# HouseofCat.Library
 Various functions and models used in several spots are now kept all in one place. Hopefully by consolidating re-used functions all my projects will have the same bugs! I mean features!
 
 Used to generate the following NuGet packages:
