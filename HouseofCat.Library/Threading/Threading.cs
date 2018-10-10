@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 
-namespace HouseofCat.Library.Threading
+namespace HouseofCat.Library
 {
     /// <summary>
     /// Class for help with dealing with Threads.
@@ -38,14 +38,14 @@ namespace HouseofCat.Library.Threading
         /// <param name="currentCore"></param>
         /// <param name="logicalProcessCount"></param>
         /// <returns></returns>
-        public static long CalculateCoreAffinity(int currentCpu, int currentCore, int logicalProcessCount)
+        public static long CalculateCoreAffinity(int cpuNumber, int coreNumber, int logicalProcessCount)
         {
             var affinity = 0;
 
-            if (currentCpu == 0)
-            { affinity = currentCore; }
+            if (cpuNumber == 0)
+            { affinity = coreNumber; }
             else
-            { affinity = currentCore + (int)Math.Pow(logicalProcessCount, currentCpu); }
+            { affinity = coreNumber + (int)Math.Pow(logicalProcessCount, cpuNumber); }
 
             return 1L << affinity;
         }

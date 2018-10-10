@@ -18,6 +18,12 @@ namespace HouseofCat.Library
             return Task.FromResult($"{instanceName}[{pid}]");
         }
 
+        /// <summary>
+        /// Constructor with parameters for default literal.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="p"></param>
+        /// <returns></returns>
         public static T Construct<T>(params object[] p)
         {
             var ctor = typeof(T)

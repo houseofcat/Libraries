@@ -12,7 +12,7 @@ namespace HouseofCat.Library
     {
         /// <summary>
         /// A high performing New generic object instance creator.
-        /// <para>Found this bit of cleverness on StackOverflow while dealing low performance using Generics.</para>
+        /// <para>Found this bit of cleverness on StackOverflow while dealing low performance using Generic instantiation.</para>
         /// <para>https://stackoverflow.com/questions/6582259/fast-creation-of-objects-instead-of-activator-createinstancetype</para>
         /// </summary>
         /// <typeparam name="T"></typeparam>

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HouseofCat.Library.Monitoring
 {
-    public static class NetworkInformation
+    public static class NetworkInfo
     {
         public static Task<List<TcpConnectionInformation>> GetActiveTcpConnectionsAsync()
         {

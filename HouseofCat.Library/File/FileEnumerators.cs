@@ -9,7 +9,7 @@ using System.Security;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace HouseofCat.Library.File
+namespace HouseofCat.Library
 {
     public static class FileEnumerators
     {
@@ -534,7 +534,6 @@ namespace HouseofCat.Library.File
             });
         }
 
-        // Not Used At The Moment
         private static async Task GetDirectoriesInParallelAsync(
             string directory,
             ConcurrentQueue<string> directories)
@@ -552,7 +551,6 @@ namespace HouseofCat.Library.File
             });
         }
 
-        // Not Used At The Moment
         private static async Task GetFileNamesInParallelAsync(
             string directory,
             string searchPattern,

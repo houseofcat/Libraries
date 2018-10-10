@@ -5,19 +5,25 @@
     <LangVersion>latest</LangVersion>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <Authors>HouseofCat.io</Authors>
+    <Description>A centralized location for cross solution / project functionality.</Description>
+    <Copyright>2018</Copyright>
     <PackageLicenseUrl>https://github.com/houseofcat/Libraries/blob/master/LICENSE</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/houseofcat/Libraries</PackageProjectUrl>
     <RepositoryUrl>https://github.com/houseofcat/Libraries</RepositoryUrl>
     <RepositoryType>GitHub</RepositoryType>
-    <Version>1.0.2.0</Version>
-    <Description>A centralized location for cross solution / project functionality.</Description>
-    <Company>HouseofCat.io</Company>
-    <Authors>HouseofCat.io</Authors>
-    <Copyright>2018</Copyright>
     <PackageTags>houseofcat, housecat, thyams, csharp, C#, netstandard</PackageTags>
     <PackageReleaseNotes>Initial Release.</PackageReleaseNotes>
-    <AssemblyVersion>1.0.2.0</AssemblyVersion>
-    <FileVersion>1.0.2.0</FileVersion>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Diagnostics.PerformanceCounter" Version="4.5.0" />
+    <PackageReference Include="System.Runtime" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HouseofCat.Library\HouseofCat.Library.csproj" />
+    <ProjectReference Include="..\HouseofCat.Models\HouseofCat.Models.csproj" />
+  </ItemGroup>
 
 </Project>

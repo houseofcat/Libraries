@@ -4,10 +4,10 @@ using System.IO.Compression;
 using System.Threading.Tasks;
 using static HouseofCat.Models.Enums;
 
-namespace HouseofCat.Library.IO
+namespace HouseofCat.Library
 {
     /// <summary>
-    /// IO Utility class to help compress objects.
+    /// The Compression class has methods to help compress objects.
     /// </summary>
     public static class Compression
     {

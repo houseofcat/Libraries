@@ -1,23 +1,33 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <OutputType>Library</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
     <LangVersion>latest</LangVersion>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <Authors>HouseofCat.io</Authors>
+    <Company>HouseofCat.io</Company>
+    <Description>A centralized location for cross solution / project serialization and compression.</Description>
+    <Copyright>2018</Copyright>
     <PackageLicenseUrl>https://github.com/houseofcat/Libraries/blob/master/LICENSE</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/houseofcat/Libraries</PackageProjectUrl>
     <RepositoryUrl>https://github.com/houseofcat/Libraries</RepositoryUrl>
     <RepositoryType>GitHub</RepositoryType>
-    <Version>1.0.2.0</Version>
-    <Description>A centralized location for cross solution / project functionality.</Description>
-    <Company>HouseofCat.io</Company>
-    <Authors>HouseofCat.io</Authors>
-    <Copyright>2018</Copyright>
     <PackageTags>houseofcat, housecat, thyams, csharp, C#, netstandard</PackageTags>
     <PackageReleaseNotes>Initial Release.</PackageReleaseNotes>
-    <AssemblyVersion>1.0.2.0</AssemblyVersion>
-    <FileVersion>1.0.2.0</FileVersion>
+    <ApplicationIcon />
+    <StartupObject />
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="lz4net" Version="1.0.15.93" />
+    <PackageReference Include="Utf8Json" Version="1.3.7" />
+    <PackageReference Include="ZeroFormatter" Version="1.6.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HouseofCat.Models\HouseofCat.Models.csproj" />
+  </ItemGroup>
 
 </Project>

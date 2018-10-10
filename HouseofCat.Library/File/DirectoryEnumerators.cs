@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 
-namespace HouseofCat.Library.File
+namespace HouseofCat.Library
 {
     class DirectoryEnumerators
     {
         #region Standard Enumeration
 
         public static IEnumerable<string> EnumerateDirectories(string parentDirectory, string searchPattern,
-                                                               SearchOption searchOpt)
+            SearchOption searchOpt)
         {
             try
             {
@@ -33,7 +33,7 @@ namespace HouseofCat.Library.File
         #region Standard Enumeration w/ Parallel
 
         public static IEnumerable<string> EnumerateDirectoriesInParallel(string parentDirectory, string searchPattern,
-                                                                   SearchOption searchOpt)
+            SearchOption searchOpt)
         {
             try
             {

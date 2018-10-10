@@ -3,29 +3,26 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <LangVersion>latest</LangVersion>
-    <Company>HouseofCat.io</Company>
-    <Version>1.0.4</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <Authors>HouseofCat.io</Authors>
+    <Company>HouseofCat.io</Company>
+    <Description>A centralized location for cross solution / project functionality. Fault injection testing.</Description>
+    <PackageReleaseNotes>Initial Release.</PackageReleaseNotes>
+    <PackageTags>houseofcat, housecat, thyams, csharp, C#, netstandard, fit, fault injection testing, chaos engineering, chaos, failure injection testing</PackageTags>
+    <Copyright>2018</Copyright>
     <PackageLicenseUrl>https://github.com/houseofcat/Libraries/blob/master/LICENSE</PackageLicenseUrl>
     <RepositoryUrl>https://github.com/houseofcat/Libraries</RepositoryUrl>
-    <RepositoryType>GitHub</RepositoryType>
-    <PackageTags>houseofcat, housecat, thyams, csharp, C#, netstandard</PackageTags>
-    <Description>A centralized location for cross solution / project functionality.</Description>
-    <Copyright>2018</Copyright>
     <PackageProjectUrl>https://github.com/houseofcat/Libraries</PackageProjectUrl>
-    <Authors>HouseofCat.io</Authors>
-    <PackageReleaseNotes>Initial Release.</PackageReleaseNotes>
-    <AssemblyVersion>1.0.4.0</AssemblyVersion>
-    <FileVersion>1.0.4.0</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.CSharp" Version="4.5.0" />
-    <PackageReference Include="System.Management" Version="4.5.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.5.1" />
+    <PackageReference Include="System.Net.Http" Version="4.3.4" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\HouseofCat.Library\HouseofCat.Library.csproj" />
     <ProjectReference Include="..\HouseofCat.Models\HouseofCat.Models.csproj" />
   </ItemGroup>
 

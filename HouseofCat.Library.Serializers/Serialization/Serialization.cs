@@ -3,7 +3,7 @@ using Utf8Json;
 using ZeroFormatter;
 using static HouseofCat.Models.Enums;
 
-namespace HouseofCat.Library.IO
+namespace HouseofCat.Library
 {
     /// <summary>
     /// IO Utility class to help serialize objects.
