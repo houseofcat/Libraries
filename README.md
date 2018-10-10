@@ -1,6 +1,8 @@
 # HouseofCat.Library
 Various functions and models used in several spots are now kept all in one place. Hopefully by consolidating re-used functions all my projects will have the same bugs! I mean features!
 
+All libraries are built using C# latest minor version. Meaning that you may get compilation or runtime errors if you are not on the latest version of C#.
+
 Used to generate the following NuGet packages:
 ### HouseofCat.Library  
 [![NuGet](https://img.shields.io/nuget/dt/HouseofCat.Library.svg)](https://www.nuget.org/packages/HouseofCat.Library/) [![NuGet](https://img.shields.io/nuget/v/HouseofCat.Library.svg)](https://www.nuget.org/packages/HouseofCat.Library/)
