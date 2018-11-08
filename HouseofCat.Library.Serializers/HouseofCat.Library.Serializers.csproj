@@ -1,8 +1,8 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Library</OutputType>
-    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <TargetFramework>netstandard2.0</TargetFramework>
     <LangVersion>latest</LangVersion>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
@@ -15,9 +15,10 @@
     <RepositoryUrl>https://github.com/houseofcat/Libraries</RepositoryUrl>
     <RepositoryType>GitHub</RepositoryType>
     <PackageTags>houseofcat, housecat, thyams, csharp, C#, netstandard</PackageTags>
-    <PackageReleaseNotes>Initial Release.</PackageReleaseNotes>
+    <PackageReleaseNotes>Converted from NetCore to NetStandard.</PackageReleaseNotes>
     <ApplicationIcon />
     <StartupObject />
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
