@@ -1,4 +1,4 @@
-﻿using System.Diagnostics;
+using System.Diagnostics;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -22,6 +22,18 @@ namespace HouseofCat.Library.Monitoring
         }
 
         /// <summary>
+        /// Calculates the number of completion port threads in use by the ThreadPool.
+        /// </summary>
+        /// <returns>ThreadPool I/O thread count.</returns>
+        public static Task<int> GetActiveCompletionPortThreadCountInThreadPoolAsync()
+        {
+            ThreadPool.GetMaxThreads(out int maxThreads, out int maxCompletionPortThreads);
+            ThreadPool.GetAvailableThreads(out int availableThreads, out int availableCompletionPortThreads);
+
+            return Task.FromResult(maxCompletionPortThreads - availableCompletionPortThreads);
+        }
+
+        /// <summary>
         /// Gets the maximum number of threads for the ThreadPool.
         /// </summary>
         /// <returns>Maximum threads in ThreadPool.</returns>
@@ -33,6 +45,17 @@ namespace HouseofCat.Library.Monitoring
         }
 
         /// <summary>
+        /// Gets the maximum number of completion port threads for the ThreadPool.
+        /// </summary>
+        /// <returns>Maximum completion port threads in ThreadPool.</returns>
+        public static Task<int> GetMaxCompletionPortThreadCountInThreadPoolAsync()
+        {
+            ThreadPool.GetMaxThreads(out int maxThreads, out int maxCompletionPortThreads);
+
+            return Task.FromResult(maxCompletionPortThreads);
+        }
+
+        /// <summary>
         /// Gets the available number of threads for the ThreadPool.
         /// </summary>
         /// <returns></returns>
@@ -41,6 +64,17 @@ namespace HouseofCat.Library.Monitoring
             ThreadPool.GetAvailableThreads(out int availableThreads, out int completionPortThreads);
 
             return Task.FromResult(availableThreads);
+        }
+
+        /// <summary>
+        /// Gets the available number of completion port threads for the ThreadPool.
+        /// </summary>
+        /// <returns></returns>
+        public static Task<int> GetAvailableCompletionPortThreadCountInThreadPoolAsync()
+        {
+            ThreadPool.GetAvailableThreads(out int availableThreads, out int availableCompletionPortThreads);
+
+            return Task.FromResult(availableCompletionPortThreads);
         }
 
         /// <summary>
